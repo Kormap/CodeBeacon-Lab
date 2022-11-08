@@ -27,11 +27,11 @@ public class PageController {
 		if(userAgent.indexOf("Mac") > -1 ) { 
 			System.out.println("User-Agent : 맥북 이용자시네요");
 			os_name = "Mac";
-			welcometext = "맥북을 쓰시다니 고수시군요";
+			welcometext = "맥북을 쓰시다니 고수시군요!";
 		}else if(userAgent.indexOf("Windows") > -1 ) { 
 			System.out.println("User-Agent : 윈도우 이용자시네요");
 			os_name = "Windows";
-			welcometext = "맥북 사세요";
+			welcometext = "맥북 사세요~";
 
 		 }
 		
