@@ -5,7 +5,9 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.*;
+
+import java.lang.reflect.Method;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +23,7 @@ public class PageController {
 		String userAgent = request.getHeader("User-Agent"); System.out.println("USER-AGENT = "+ userAgent);
 		
 		//상태코드 강제 설정 
-		response.setStatus(500);
+		response.setStatus(404);
 		
 		//응답헤더 - 윈도우설정 
 //		userAgent = "Windows";
@@ -113,6 +115,7 @@ public class PageController {
 		return "appmenulist";
 	}
 */  // APPMENU_LIST 테스트
+
 
 
 }

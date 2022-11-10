@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 //API 확인용 = RestController 로 생성
@@ -28,7 +29,14 @@ public class APIController {
 
 		return userAgent;
 	}
-
+//	@RequestMapping(value = "/options", method = RequestMethod.OPTIONS)
+//	public String OptionsMethod(HttpServletRequest request, HttpServletResponse response) {
+//
+//		String options = request.getMethod();
+//
+//
+//		return options;
+//	}
 
 	@GetMapping("/appmenulist")
 	public List<AppMenuDept> getappMenuList(Model model) {
