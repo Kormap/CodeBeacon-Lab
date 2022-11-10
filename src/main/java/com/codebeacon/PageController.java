@@ -31,7 +31,7 @@ public class PageController {
 		}else if(userAgent.indexOf("Windows") > -1 ) { 
 			System.out.println("User-Agent : 윈도우 이용자시네요");
 			os_name = "Windows";
-			welcometext = "맥북 사세요~";
+			welcometext = "맥북 쓰세요.";
 
 		 }
 		
