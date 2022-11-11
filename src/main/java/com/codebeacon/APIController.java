@@ -61,9 +61,9 @@ public class APIController {
 		// 1 DEPT : 쿠폰
 		AppMenuDept appMenuDept = new AppMenuDept();
 
-		appMenuDept.setSeq         ("1");
+		appMenuDept.setSeq         (1);
 		appMenuDept.setCd          ("M0001");
-		appMenuDept.setCd_nm       ("쿠폰");
+		appMenuDept.setCdNm    ("쿠폰");
 		appMenuDept.setDspType ("T");
 		appMenuDept.setMenuId      ("CP0001");
 		appMenuDept.setMenuNm      ("쿠폰");
@@ -71,13 +71,13 @@ public class APIController {
 		appMenuDept.setMenuCd      ("01");
 		appMenuDept.setUrl         ("");
 		appMenuDept.setReturnUrl   ("");
-		appMenuDept.setContent_id  ("BOS0120");
-		appMenuDept.setImg_url     ("");
-		appMenuDept.setDispYn      ("");
+		appMenuDept.setContentId  ("BOS0120");
+		appMenuDept.setImgUrl     ("");
+		appMenuDept.setDisp_yn      ("");
 		appMenuDept.setService     ("");
-		appMenuDept.setNewYn       ("");
-		appMenuDept.setMenuConnCd  ("");
-		appMenuDept.setMenuNmColor ("");
+		appMenuDept.setNew_yn       ("");
+		appMenuDept.setMenu_conn_cd  ("");
+		appMenuDept.setMenu_nm_color ("");
 		appMenuDept.setMenuDept    ("1");
 
 		appMenuList.add(appMenuDept);
@@ -87,9 +87,9 @@ public class APIController {
 //
 		AppMenuDept appMenuDept1 = new AppMenuDept();
 
-		appMenuDept1.setSeq         ("2");
+		appMenuDept1.setSeq         (2);
 		appMenuDept1.setCd          ("M0002");
-		appMenuDept1.setCd_nm       ("");
+		appMenuDept1.setCdNm       ("");
 		appMenuDept1.setDspType ("T");
 		appMenuDept1.setMenuId      ("");
 		appMenuDept1.setMenuNm      ("");
@@ -97,13 +97,13 @@ public class APIController {
 		appMenuDept1.setMenuCd      ("01");
 		appMenuDept1.setUrl         ("");
 		appMenuDept1.setReturnUrl   ("");
-		appMenuDept1.setContent_id  ("");
-		appMenuDept1.setImg_url     ("");
-		appMenuDept1.setDispYn      ("");
+		appMenuDept1.setContentId  ("");
+		appMenuDept1.setImgUrl     ("");
+		appMenuDept1.setDisp_yn      ("");
 		appMenuDept1.setService     ("");
-		appMenuDept1.setNewYn       ("");
-		appMenuDept1.setMenuConnCd  ("");
-		appMenuDept1.setMenuNmColor ("");
+		appMenuDept1.setNew_yn       ("");
+		appMenuDept1.setMenu_conn_cd  ("");
+		appMenuDept1.setMenu_nm_color ("");
 		appMenuDept1.setMenuDept    ("");
 
 		appMenuList.add(appMenuDept1);

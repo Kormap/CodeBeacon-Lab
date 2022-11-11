@@ -9,7 +9,7 @@
 
 <body>
 <h1> MODEL APPMENU LIST TEST</h1><br>
-<h2>APPMENU LIST = ${appMenuList.get(0).getCd()}</h2>
+<h2>APPMENU LIST = ${searchResult}</h2>
 
 </body>
 </html>
