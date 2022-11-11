@@ -16,18 +16,30 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/http/*")
 public class APIController {
-	
+
 	@GetMapping("/useragent")
-	public String getuserAgent(HttpServletRequest request, HttpServletResponse response) {
-		
+	public List<String> getuserAgent(HttpServletRequest request, HttpServletResponse response) {
+
 		String userAgent = request.getHeader("User-Agent");
 		System.out.println("USER-AGENT = "+ userAgent);
 		response.setStatus(300);
-//		String os_name = "Mac";
-		if(userAgent.indexOf("Mac") > -1 ) System.out.println("User-Agent : 맥북 이용자시네요");
-		else if(userAgent.indexOf("Windows") > -1 ) System.out.println("User-Agent : 윈도우 이용자시네요");
 
-		return userAgent;
+		List<String> result = new ArrayList<>();
+		String compareOS = "";
+
+		result.add(userAgent);
+
+		if(userAgent.indexOf("Mac") > -1 ) {
+			System.out.println("User-Agent : 맥북 이용자시네요");
+			compareOS = "맥북 이용자시네요";
+		}else if(userAgent.indexOf("Windows") > -1 ) {
+			System.out.println("User-Agent : 윈도우 이용자시네요");
+			compareOS = "윈도우 이용자시네요";
+		}
+
+		result.add(compareOS);
+
+		return result;
 	}
 //	@RequestMapping(value = "/options", method = RequestMethod.OPTIONS)
 //	public String OptionsMethod(HttpServletRequest request, HttpServletResponse response) {
