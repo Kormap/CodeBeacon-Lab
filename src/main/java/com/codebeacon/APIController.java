@@ -7,10 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 //API 확인용 = RestController 로 생성
 @RestController
@@ -116,6 +113,75 @@ public class APIController {
 
 		return appMenuList;
 	}
+
+
+	@PostMapping("/appmenulist")
+	public List<AppMenuDept> postappMenuList(Model model) {
+
+		// List 만들기
+		List<AppMenuDept> appMenuList = new ArrayList<AppMenuDept>();
+
+		// ========================= 1 DEPT 시작 ======================================
+
+		// 1 DEPT : 쿠폰
+		AppMenuDept appMenuDept = new AppMenuDept();
+
+		appMenuDept.setSeq         (1);
+		appMenuDept.setCd          ("M0001");
+		appMenuDept.setCdNm    ("쿠폰");
+		appMenuDept.setDspType ("T");
+		appMenuDept.setMenuId      ("CP0001");
+		appMenuDept.setMenuNm      ("쿠폰");
+		appMenuDept.setMenuSubNm   ("");
+		appMenuDept.setMenuCd      ("01");
+		appMenuDept.setUrl         ("");
+		appMenuDept.setReturnUrl   ("");
+		appMenuDept.setContentId  ("BOS0120");
+		appMenuDept.setImgUrl     ("");
+		appMenuDept.setDisp_yn      ("");
+		appMenuDept.setService     ("");
+		appMenuDept.setNew_yn       ("");
+		appMenuDept.setMenu_conn_cd  ("");
+		appMenuDept.setMenu_nm_color ("");
+		appMenuDept.setMenuDept    ("1");
+
+		appMenuList.add(appMenuDept);
+
+
+		// 1 DEPT : 스마트 오더
+//
+		AppMenuDept appMenuDept1 = new AppMenuDept();
+
+		appMenuDept1.setSeq         (2);
+		appMenuDept1.setCd          ("M0002");
+		appMenuDept1.setCdNm       ("");
+		appMenuDept1.setDspType ("T");
+		appMenuDept1.setMenuId      ("");
+		appMenuDept1.setMenuNm      ("");
+		appMenuDept1.setMenuSubNm   ("");
+		appMenuDept1.setMenuCd      ("01");
+		appMenuDept1.setUrl         ("");
+		appMenuDept1.setReturnUrl   ("");
+		appMenuDept1.setContentId  ("");
+		appMenuDept1.setImgUrl     ("");
+		appMenuDept1.setDisp_yn      ("");
+		appMenuDept1.setService     ("");
+		appMenuDept1.setNew_yn       ("");
+		appMenuDept1.setMenu_conn_cd  ("");
+		appMenuDept1.setMenu_nm_color ("");
+		appMenuDept1.setMenuDept    ("");
+
+		appMenuList.add(appMenuDept1);
+
+		System.out.println("1= "+appMenuList.get(0).getCd());
+		System.out.println("2= "+appMenuList.get(1).getCd());
+		System.out.println("2-1= "+appMenuList.get(1).toString());
+
+//		model.addAttribute("appMenuList",appMenuList);
+
+		return appMenuList;
+	}
+
 }
 
 
