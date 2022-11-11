@@ -41,14 +41,14 @@ public class APIController {
 
 		return result;
 	}
-//	@RequestMapping(value = "/options", method = RequestMethod.OPTIONS)
-//	public String OptionsMethod(HttpServletRequest request, HttpServletResponse response) {
-//
-//		String options = request.getMethod();
-//
-//
-//		return options;
-//	}
+	@RequestMapping(value = "/options", method = RequestMethod.OPTIONS)
+	public String OptionsMethod(HttpServletRequest request, HttpServletResponse response) {
+
+		String options = request.getMethod();
+
+
+		return options;
+	}
 
 	@GetMapping("/appmenulist")
 	public List<AppMenuDept> getappMenuList(Model model) {
