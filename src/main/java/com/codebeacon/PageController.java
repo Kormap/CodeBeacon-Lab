@@ -1,15 +1,12 @@
 package com.codebeacon;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.lang.reflect.Method;
-
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -364,6 +361,7 @@ public class PageController {
 		appMenuDept14.setUrl         ("");
 		appMenuDept14.setMenu_conn_cd("M0005");
 		appMenuDept14.setMenuDept    ("2");
+		appMenuDept14.setMenuDept2    ("신세계 아카데미");
 
 		appMenuList.add(appMenuDept14);
 
@@ -388,6 +386,7 @@ public class PageController {
 		appMenuDept15.setUrl         ("/history/main.do");
 		appMenuDept15.setMenu_conn_cd("M0006");
 		appMenuDept15.setMenuDept    ("2");
+		appMenuDept15.setMenuDept2    ("VIP");
 
 		appMenuList.add(appMenuDept15);
 
@@ -400,6 +399,7 @@ public class PageController {
 		appMenuDept16.setUrl         ("/fastTrack/main.do");
 		appMenuDept16.setMenu_conn_cd("M0006");
 		appMenuDept16.setMenuDept    ("2");
+		appMenuDept16.setMenuDept2    ("VIP");
 
 		appMenuList.add(appMenuDept16);
 
@@ -412,6 +412,7 @@ public class PageController {
 		appMenuDept17.setUrl         ("/event/main.do");
 		appMenuDept17.setMenu_conn_cd("M0006");
 		appMenuDept17.setMenuDept    ("2");
+		appMenuDept17.setMenuDept2    ("VIP");
 
 		appMenuList.add(appMenuDept17);
 
@@ -424,6 +425,7 @@ public class PageController {
 		appMenuDept18.setUrl         ("/promotion/specialMileage.do");
 		appMenuDept18.setMenu_conn_cd("M0006");
 		appMenuDept18.setMenuDept    ("2");
+		appMenuDept18.setMenuDept2    ("VIP");
 
 		appMenuList.add(appMenuDept18);
 
@@ -437,6 +439,7 @@ public class PageController {
 		appMenuDept19.setUrl         ("");
 		appMenuDept19.setMenu_conn_cd("M0006");
 		appMenuDept19.setMenuDept    ("2");
+		appMenuDept19.setMenuDept2    ("VIP");
 
 		appMenuList.add(appMenuDept19);
 
@@ -449,6 +452,7 @@ public class PageController {
 		appMenuDept20.setUrl         ("https://deptmapp.shinsegae.com/service/vipclub/benefits-trinity.do");
 		appMenuDept20.setMenu_conn_cd("M0006");
 		appMenuDept20.setMenuDept    ("2");
+		appMenuDept20.setMenuDept2    ("VIP");
 
 		appMenuList.add(appMenuDept20);
 
@@ -462,6 +466,7 @@ public class PageController {
 		appMenuDept21.setUrl         ("");
 		appMenuDept21.setMenu_conn_cd("M0007");
 		appMenuDept21.setMenuDept    ("2");
+		appMenuDept21.setMenuDept2    ("점포안내");
 
 		appMenuList.add(appMenuDept21);
 
@@ -474,6 +479,7 @@ public class PageController {
 		appMenuDept22.setUrl         ("https://push.swallet.shinsegae.com/epush/retrieveFoodCourtServlet?store_cd=SC00001/inapplink:req_get:");
 		appMenuDept22.setMenu_conn_cd("M0007");
 		appMenuDept22.setMenuDept    ("2");
+		appMenuDept22.setMenuDept2    ("점포안내");
 
 		appMenuList.add(appMenuDept22);
 
@@ -486,6 +492,7 @@ public class PageController {
 		appMenuDept23.setUrl         ("");
 		appMenuDept23.setMenu_conn_cd("M0008");
 		appMenuDept23.setMenuDept    ("2");
+		appMenuDept23.setMenuDept2    ("쇼핑안내");
 
 		appMenuList.add(appMenuDept23);
 
@@ -498,6 +505,7 @@ public class PageController {
 		appMenuDept24.setUrl         ("/wallet/bmp/index");
 		appMenuDept24.setMenu_conn_cd("M0008");
 		appMenuDept24.setMenuDept    ("2");
+		appMenuDept24.setMenuDept2    ("쇼핑안내");
 
 		appMenuList.add(appMenuDept24);
 
@@ -510,6 +518,7 @@ public class PageController {
 		appMenuDept25.setUrl         ("");
 		appMenuDept25.setMenu_conn_cd("M0009");
 		appMenuDept25.setMenuDept    ("2");
+		appMenuDept25.setMenuDept2    ("마이페이지");
 
 		appMenuList.add(appMenuDept25);
 
@@ -522,6 +531,7 @@ public class PageController {
 		appMenuDept26.setUrl         ("/wallet/receiptGrade/myBrand?enter_gubun=mainMenu/inapplink:login_compulsion_open:req_get:app_bottom_bar:");
 		appMenuDept26.setMenu_conn_cd("M0009");
 		appMenuDept26.setMenuDept    ("2");
+		appMenuDept26.setMenuDept2    ("마이페이지");
 
 		appMenuList.add(appMenuDept26);
 
@@ -534,6 +544,7 @@ public class PageController {
 		appMenuDept27.setUrl         ("");
 		appMenuDept27.setMenu_conn_cd("M0009");
 		appMenuDept27.setMenuDept    ("2");
+		appMenuDept27.setMenuDept2    ("마이페이지");
 
 		appMenuList.add(appMenuDept27);
 
@@ -547,6 +558,7 @@ public class PageController {
 		appMenuDept28.setUrl         ("");
 		appMenuDept28.setMenu_conn_cd("M0010");
 		appMenuDept28.setMenuDept    ("2");
+		appMenuDept28.setMenuDept2    ("신세계 컨텐츠");
 
 		appMenuList.add(appMenuDept28);
 
@@ -559,6 +571,8 @@ public class PageController {
 		appMenuDept29.setUrl         ("");
 		appMenuDept29.setMenu_conn_cd("M0010");
 		appMenuDept29.setMenuDept    ("3");
+		appMenuDept29.setMenuDept2    ("신세계 컨텐츠");
+		appMenuDept29.setMenuDept3    ("큐레이션");
 
 		appMenuList.add(appMenuDept29);
 
@@ -571,6 +585,8 @@ public class PageController {
 		appMenuDept30.setUrl         ("/wallet/event/mCatalogEvent/getMCatalogEventDtlInfo?event_id=6850&event_type=03&store_cd=SC00008/inapplink:login_compulsion_open:req_get:");
 		appMenuDept30.setMenu_conn_cd("M0010");
 		appMenuDept30.setMenuDept    ("3");
+		appMenuDept30.setMenuDept2    ("신세계 컨텐츠");
+		appMenuDept30.setMenuDept3    ("큐레이션");
 
 		appMenuList.add(appMenuDept30);
 
@@ -583,6 +599,8 @@ public class PageController {
 		appMenuDept31.setUrl         ("/wallet/cooperation/main?companyCd=SB&gubunType=KATE/inapplink:login_compulsion_open:req_get:");
 		appMenuDept31.setMenu_conn_cd("M0010");
 		appMenuDept31.setMenuDept    ("3");
+		appMenuDept31.setMenuDept2    ("신세계 컨텐츠");
+		appMenuDept31.setMenuDept3    ("큐레이션");
 
 		appMenuList.add(appMenuDept31);
 
@@ -595,6 +613,8 @@ public class PageController {
 		appMenuDept32.setUrl         ("http://ssg2.bookcube.biz/FxLibrary/dependency/sso/sso.jsp?param_1={userId}&param_2={userId}&param_3={custNm}&pathtype=mobile/inapplink:login_compulsion_open:req_get:app_bo");
 		appMenuDept32.setMenu_conn_cd("M0010");
 		appMenuDept32.setMenuDept    ("3");
+		appMenuDept32.setMenuDept2    ("신세계 컨텐츠");
+		appMenuDept32.setMenuDept3    ("큐레이션");
 
 		appMenuList.add(appMenuDept32);
 
@@ -607,6 +627,8 @@ public class PageController {
 		appMenuDept33.setUrl         ("https://campaign.genie.co.kr/genielounge11/inapplink:login_compulsion_open:req_get:app_bottom_bar:");
 		appMenuDept33.setMenu_conn_cd("M0010");
 		appMenuDept33.setMenuDept    ("3");
+		appMenuDept33.setMenuDept2    ("신세계 컨텐츠");
+		appMenuDept33.setMenuDept3    ("큐레이션");
 
 		appMenuList.add(appMenuDept33);
 
@@ -620,6 +642,7 @@ public class PageController {
 		appMenuDept34.setUrl         ("");
 		appMenuDept34.setMenu_conn_cd("M0010");
 		appMenuDept34.setMenuDept    ("2");
+		appMenuDept34.setMenuDept2    ("신세계 컨텐츠");
 
 		appMenuList.add(appMenuDept34);
 
@@ -632,6 +655,8 @@ public class PageController {
 		appMenuDept35.setUrl         ("https://deptmapp.shinsegae.com/magazine/app/list.do/inapplink:req_get:");
 		appMenuDept35.setMenu_conn_cd("");
 		appMenuDept35.setMenuDept    ("3");
+		appMenuDept35.setMenuDept2   ("신세계 컨텐츠");
+		appMenuDept35.setMenuDept3   ("라이프 스타일");
 
 		appMenuList.add(appMenuDept35);
 
@@ -644,6 +669,8 @@ public class PageController {
 		appMenuDept36.setUrl         ("");
 		appMenuDept36.setMenu_conn_cd("M0010");
 		appMenuDept36.setMenuDept    ("3");
+		appMenuDept36.setMenuDept2   ("신세계 컨텐츠");
+		appMenuDept36.setMenuDept3   ("라이프 스타일");
 
 		appMenuList.add(appMenuDept36);
 
@@ -656,6 +683,8 @@ public class PageController {
 		appMenuDept37.setUrl         ("/wallet/recipe/getRecipeList?storeCd=SC00001/inapplink:req_post:");
 		appMenuDept37.setMenu_conn_cd("M0010");
 		appMenuDept37.setMenuDept    ("3");
+		appMenuDept37.setMenuDept2   ("신세계 컨텐츠");
+		appMenuDept37.setMenuDept3   ("라이프 스타일");
 
 		appMenuList.add(appMenuDept37);
 
@@ -668,6 +697,8 @@ public class PageController {
 		appMenuDept38.setUrl         ("/wallet/foodCoupon/index/inapplink:req_get:");
 		appMenuDept38.setMenu_conn_cd("M0010");
 		appMenuDept38.setMenuDept    ("3");
+		appMenuDept38.setMenuDept2   ("신세계 컨텐츠");
+		appMenuDept38.setMenuDept3   ("라이프 스타일");
 
 		appMenuList.add(appMenuDept38);
 
@@ -681,6 +712,8 @@ public class PageController {
 		appMenuDept39.setUrl         ("");
 		appMenuDept39.setMenu_conn_cd("M0010");
 		appMenuDept39.setMenuDept    ("3");
+		appMenuDept39.setMenuDept2   ("신세계 컨텐츠");
+		appMenuDept39.setMenuDept3   ("라이프 스타일");
 
 		appMenuList.add(appMenuDept39);
 
@@ -693,6 +726,7 @@ public class PageController {
 		appMenuDept40.setUrl         ("/wallet/deptLiveStream/getLiveMain/inapplink:req_get:");
 		appMenuDept40.setMenu_conn_cd("M0011");
 		appMenuDept40.setMenuDept    ("2");
+		appMenuDept40.setMenuDept2    ("신세계 온라인");
 
 		appMenuList.add(appMenuDept40);
 
@@ -705,6 +739,7 @@ public class PageController {
 		appMenuDept41.setUrl         ("https://m.ssg.com/page/giftdept/outlink:req_get:ssgsso:ssgcom_ssggift");
 		appMenuDept41.setMenu_conn_cd("M0011");
 		appMenuDept41.setMenuDept    ("2");
+		appMenuDept41.setMenuDept2    ("신세계 온라인");
 
 		appMenuList.add(appMenuDept41);
 
@@ -717,6 +752,7 @@ public class PageController {
 		appMenuDept42.setUrl         ("http://m.ssg.com/outlink:req_get:ssgsso:ssgcom_main");
 		appMenuDept42.setMenu_conn_cd("M0011");
 		appMenuDept42.setMenuDept    ("2");
+		appMenuDept42.setMenuDept2    ("신세계 온라인");
 
 		appMenuList.add(appMenuDept42);
 
@@ -730,6 +766,7 @@ public class PageController {
 		appMenuDept43.setUrl         ("");
 		appMenuDept43.setMenu_conn_cd("M0012");
 		appMenuDept43.setMenuDept    ("2");
+		appMenuDept43.setMenuDept2   ("NFT");
 
 		appMenuList.add(appMenuDept43);
 
@@ -743,6 +780,7 @@ public class PageController {
 		appMenuDept44.setUrl         ("");
 		appMenuDept44.setMenu_conn_cd("M0012");
 		appMenuDept44.setMenuDept    ("2");
+		appMenuDept44.setMenuDept2   ("NFT");
 
 		appMenuList.add(appMenuDept44);
 
@@ -755,6 +793,7 @@ public class PageController {
 		appMenuDept45.setUrl         ("/wallet/nft/nftWalletGuide?enter_event_id=3931&store_cd=SC00001&event_id=3931/inapplink:req_get:");
 		appMenuDept45.setMenu_conn_cd("M0012");
 		appMenuDept45.setMenuDept    ("2");
+		appMenuDept45.setMenuDept2   ("NFT");
 
 		appMenuList.add(appMenuDept45);
 
@@ -767,6 +806,7 @@ public class PageController {
 		appMenuDept46.setUrl         ("http://app.ds.shinsegae.com/wallet/factoryStoreSelPageView/inapplink:req_get:app_bottom_bar:");
 		appMenuDept46.setMenu_conn_cd("M0014");
 		appMenuDept46.setMenuDept    ("2");
+		appMenuDept46.setMenuDept2   ("패밀리");
 
 		appMenuList.add(appMenuDept46);
 
@@ -779,6 +819,7 @@ public class PageController {
 		appMenuDept47.setUrl         ("https://deptmapp.shinsegae.com/styleMarket/app/main.do?storeCd=MC00001/inapplink:req_get:app_bottom_bar:");
 		appMenuDept47.setMenu_conn_cd("M0014");
 		appMenuDept47.setMenuDept    ("2");
+		appMenuDept47.setMenuDept2   ("패밀리");
 
 		appMenuList.add(appMenuDept47);
 
@@ -791,6 +832,7 @@ public class PageController {
 		appMenuDept48.setUrl         ("/wallet/SSGLandersReplyEvent?ssg_id=2/inapplink:");
 		appMenuDept48.setMenu_conn_cd("M0014");
 		appMenuDept48.setMenuDept    ("2");
+		appMenuDept48.setMenuDept2   ("패밀리");
 
 		appMenuList.add(appMenuDept48);
 
@@ -805,6 +847,7 @@ public class PageController {
 		appMenuDept49.setUrl         ("http://department.ssg.com/main.ssg/ssgsso:ssgcom");
 		appMenuDept49.setMenu_conn_cd("M0014");
 		appMenuDept49.setMenuDept    ("2");
+		appMenuDept49.setMenuDept2   ("패밀리");
 
 		appMenuList.add(appMenuDept49);
 
@@ -817,6 +860,7 @@ public class PageController {
 		appMenuDept50.setUrl         ("");
 		appMenuDept50.setMenu_conn_cd("M0014");
 		appMenuDept50.setMenuDept    ("2");
+		appMenuDept50.setMenuDept2   ("패밀리");
 
 		appMenuList.add(appMenuDept50);
 
@@ -830,6 +874,7 @@ public class PageController {
 		appMenuDept51.setUrl         ("https://shinsegaepointapp.page.link/R6GT/outlink:req_get:");
 		appMenuDept51.setMenu_conn_cd("M0014");
 		appMenuDept51.setMenuDept    ("2");
+		appMenuDept51.setMenuDept2   ("패밀리");
 
 		appMenuList.add(appMenuDept51);
 
@@ -843,6 +888,7 @@ public class PageController {
 		appMenuDept52.setUrl         ("https://deptmapp.shinsegae.com/service/membership/card.do/outlink:req_get:");
 		appMenuDept52.setMenu_conn_cd("M0014");
 		appMenuDept52.setMenuDept    ("2");
+		appMenuDept52.setMenuDept2   ("패밀리");
 
 		appMenuList.add(appMenuDept52);
 

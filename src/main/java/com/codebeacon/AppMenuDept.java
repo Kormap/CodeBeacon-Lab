@@ -35,5 +35,7 @@ public class AppMenuDept {
     private String dspType;           // 메뉴 상 하단 배치
     private String returnUrl;         // ?
     private String menuDept;          // DEPT 구분
+    private String menuDept2;          // DEPT 구분
+    private String menuDept3;          // DEPT 구분
 
 }
