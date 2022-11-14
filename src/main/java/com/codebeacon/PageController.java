@@ -24,7 +24,7 @@ public class PageController {
 		String userAgent = request.getHeader("User-Agent"); System.out.println("USER-AGENT = "+ userAgent);
 		
 		//상태코드 강제 설정 
-		response.setStatus(404);
+		response.setStatus(302);
 		
 		//응답헤더 - 윈도우설정 
 //		userAgent = "Windows";
