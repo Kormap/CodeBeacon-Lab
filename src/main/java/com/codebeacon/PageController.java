@@ -7,6 +7,8 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,6 +17,7 @@ public class PageController {
 	
 	String welcometext = "";
 	
+	//HTTP useragent test
 	@GetMapping("/useragent")
 	public String useragent(Model model, HttpServletRequest request, HttpServletResponse response) {
 		
@@ -35,7 +38,6 @@ public class PageController {
 			System.out.println("User-Agent : 윈도우 이용자시네요");
 			os_name = "Windows";
 			welcometext = "맥북 쓰세요.";
-
 		 }
 		
 		model.addAttribute("data",userAgent);
@@ -44,75 +46,8 @@ public class PageController {
 		return "useragent";
 	}
 
-	/*
-	@GetMapping("/appmenulist")
-	public String getappMenuList(Model model) {
 
-		// List 만들기
-		List<AppMenuDept> appMenuList = new ArrayList<AppMenuDept>();
-
-		// ========================= 1 DEPT 시작 ======================================
-
-		// 1 DEPT : 쿠폰
-		AppMenuDept appMenuDept = new AppMenuDept();
-
-		appMenuDept.setSeq         ("1");
-		appMenuDept.setCd          ("M0001");
-		appMenuDept.setCd_nm       ("쿠폰");
-		appMenuDept.setDspType ("T");
-		appMenuDept.setMenuId      ("CP0001");
-		appMenuDept.setMenuNm      ("쿠폰");
-		appMenuDept.setMenuSubNm   ("");
-		appMenuDept.setMenuCd      ("01");
-		appMenuDept.setUrl         ("");
-		appMenuDept.setReturnUrl   ("");
-		appMenuDept.setContentId  ("BOS0120");
-		appMenuDept.setImgUrl     ("");
-		appMenuDept.setDisp_yn      ("");
-		appMenuDept.setService     ("");
-		appMenuDept.setNew_yn       ("");
-		appMenuDept.setMenu_conn_cd  ("");
-		appMenuDept.setMenu_nm_color ("");
-		appMenuDept.setMenuDept    ("1");
-
-		appMenuList.add(appMenuDept);
-
-
-		// 1 DEPT : 스마트 오더
-//
-		AppMenuDept appMenuDept1 = new AppMenuDept();
-
-		appMenuDept1.setSeq         ("2");
-		appMenuDept1.setCd          ("M0002");
-		appMenuDept1.setCd_nm       ("");
-		appMenuDept1.setDspType ("T");
-		appMenuDept1.setMenuId      ("");
-		appMenuDept1.setMenuNm      ("");
-		appMenuDept1.setMenuSubNm   ("");
-		appMenuDept1.setMenuCd      ("01");
-		appMenuDept1.setUrl         ("");
-		appMenuDept1.setReturnUrl   ("");
-		appMenuDept1.setContentId  ("");
-		appMenuDept1.setImgUrl     ("");
-		appMenuDept1.setDisp_yn      ("");
-		appMenuDept1.setService     ("");
-		appMenuDept1.setNew_yn       ("");
-		appMenuDept1.setMenu_conn_cd  ("");
-		appMenuDept1.setMenu_nm_color ("");
-		appMenuDept1.setMenuDept    ("");
-
-		appMenuList.add(appMenuDept1);
-
-		System.out.println("1="+appMenuList.get(0).getCd());
-		System.out.println("2="+appMenuList.get(1).getCd());
-
-
-		model.addAttribute("appMenuList",appMenuList);
-
-
-		return "appmenulist";
-	}
-*/  // APPMENU_LIST 테스트
+	//App 메뉴 리스트 Depth = 3
 	@GetMapping("/appmenulist")
 	public ModelAndView getappMenuList(Model model) {
 
@@ -899,6 +834,19 @@ public class PageController {
 		System.out.println(mav);
 		return mav;
 // ================================================================================= END
+	}
+
+	//InetAddress (IP Test)
+	@GetMapping("/ipconfig")
+	public String getIpInfo(Model model) throws UnknownHostException {
+
+		InetAddress ipAddress = InetAddress.getLocalHost();
+		System.out.println("내 아이피: " +ipAddress);
+
+		String ipAddress_str = ipAddress.getHostAddress();
+		model.addAttribute("IP",ipAddress_str);
+
+		return "ipconfig";
 	}
 
 

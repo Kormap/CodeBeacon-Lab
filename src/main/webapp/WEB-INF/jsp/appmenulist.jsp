@@ -16,6 +16,7 @@
 <%--<h2>APP MENU LIST = ${searchResult[0].menuNm}</h2>--%>
 <h2>APP MENU LIST</h2>
 <ul>
+    <!-- 상단 TOP 5 메뉴 -->
     <c:forEach var="appmenu" items="${searchResult}" begin="0" end="4">
         <c:if test="${appmenu.menuDept eq 1}">
             <li class="dept1">${appmenu.menuNm}</li>
@@ -23,7 +24,7 @@
     </c:forEach>
 
     <h1>Dept partition</h1>
-
+    <!-- 1 depth = VIP -->
     <c:forEach var="appmenu" items="${searchResult}" begin="5" end="${fn:length(searchResult)}">
         <c:if test="${appmenu.menuNm eq 'VIP'}">
             <li class="dept1">${appmenu.menuNm}</li>
@@ -39,6 +40,7 @@
             </c:choose>
     </c:forEach>
 
+    <!-- 1 depth = 점포안내 -->
     <c:forEach var="appmenu" items="${searchResult}" begin="5" end="${fn:length(searchResult)}">
         <c:if test="${appmenu.menuNm eq '점포안내'}">
                 <li class="dept1">${appmenu.menuNm}</li>
@@ -54,6 +56,7 @@
             </c:choose>
     </c:forEach>
 
+    <!-- 1 depth = 쇼핑안내 -->
     <c:forEach var="appmenu" items="${searchResult}" begin="5" end="${fn:length(searchResult)}">
         <c:if test="${appmenu.menuNm eq '쇼핑안내'}">
             <li class="dept1">${appmenu.menuNm}</li>
@@ -69,6 +72,7 @@
         </c:choose>
     </c:forEach>
 
+    <!-- 1 depth = 마이페이지 -->
     <c:forEach var="appmenu" items="${searchResult}" begin="5" end="${fn:length(searchResult)}">
         <c:if test="${appmenu.menuNm eq '마이페이지'}">
             <li class="dept1">${appmenu.menuNm}</li>
@@ -84,6 +88,7 @@
         </c:choose>
     </c:forEach>
 
+    <!-- 1 depth = 신세계 컨텐츠 / 3 depth 까지 존재 -->
     <c:forEach var="appmenu" items="${searchResult}" begin="5" end="${fn:length(searchResult)}">
         <c:if test="${appmenu.menuNm eq '신세계 컨텐츠'}">
             <li class="dept1">${appmenu.menuNm}</li>
@@ -114,28 +119,6 @@
     </c:forEach>
 
 
-
-
-<%--    <c:forEach var="appmenu" items="${searchResult}" begin="0" end="${fn:length(searchResult)}">
-        <c:if test="${appmenu.seq eq 2}">
-            <li class="dept1">${appmenu.menuNm}</li>
-        </c:if>
-    </c:forEach>
-
-    <c:forEach var="appmenu" items="${searchResult}" begin="0" end="${fn:length(searchResult)}">
-
-        <c:if test="${appmenu.menuDept eq '2'}">
-            <c:choose>
-                <c:when test="${appmenu.menuDept2 eq '신세계 아카데미'}">
-                    <li class="dept2">${appmenu.menuNm}</li>
-                </c:when>
-            </c:choose>
-        </c:if>
-    </c:forEach>--%>
-
-<%--
-        <li>${appmenu.menuNm}</li>
---%>
 </ul>
 
 
